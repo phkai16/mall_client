@@ -4,16 +4,16 @@ import { ShopAPIService } from 'src/app/services/shopAPI.service';
 
 @Component({
 
-  templateUrl: './food_drink.component.html',
+  templateUrl: './enter_learn.component.html',
 })
-export class Food_DrinkComponent implements OnInit{
+export class Enter_learnComponent implements OnInit{
   constructor(
     private shopAPIService: ShopAPIService
   ){}
   shops: Shop[];
   
   ngOnInit(): void {
-    this.shopAPIService.findByCategoryID(1).then(
+    this.shopAPIService.findByCategoryID(3).then(
       res => {
           this.shops = res as Shop[]; 
           console.log(this.shops);

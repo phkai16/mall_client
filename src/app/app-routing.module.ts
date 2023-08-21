@@ -4,6 +4,8 @@ import { ShopComponent } from './components/shop/shop.component';
 import { ProductComponent } from './components/product/product.component';
 import { Food_DrinkComponent } from './components/food-drink/food_drink.component';
 import { HomeComponent } from './components/home/home.component';
+import { ShoppingComponent } from './components/shopping/shopping.component';
+import { Enter_learnComponent } from './components/enter_learn/enter_learn.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path: 'food-drink',
     component: Food_DrinkComponent,
+  },
+  {
+    path: 'shopping',
+    component: ShoppingComponent,
+  },
+  {
+    path: 'entertainment-learning',
+    component: Enter_learnComponent,
   },
 ];
 

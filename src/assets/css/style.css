@@ -223,13 +223,13 @@
     background-size: cover;
 }
 
+
 .bootstrap-datetimepicker-widget.bottom {
     top: auto !important;
 }
 
 .bootstrap-datetimepicker-widget .table * {
     border-bottom-width: 0px;
-    /* aa */
 }
 
 .bootstrap-datetimepicker-widget .table th {
