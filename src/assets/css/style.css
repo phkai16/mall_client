@@ -219,7 +219,7 @@
 
 /*** Booking ***/
 .booking {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-2.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/hinhhoptac.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -229,6 +229,7 @@
 
 .bootstrap-datetimepicker-widget .table * {
     border-bottom-width: 0px;
+    /* aa */
 }
 
 .bootstrap-datetimepicker-widget .table th {
