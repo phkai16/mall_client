@@ -12,6 +12,10 @@ import { BaseUrlService } from './services/baseUrl.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { Enter_learnComponent } from './components/enter_learn/enter_learn.component';
+import { ProductAPIService } from './services/productAPI.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DropdownModule } from 'primeng/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent, ShopComponent, ProductComponent,
@@ -22,11 +26,16 @@ import { Enter_learnComponent } from './components/enter_learn/enter_learn.compo
     ProductComponent
   ],
   imports: [BrowserModule, AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    DropdownModule  
   ],
   providers: [
     ShopAPIService,
-    BaseUrlService
+    BaseUrlService,
+    ProductAPIService
   ],
   bootstrap: [AppComponent],
 })

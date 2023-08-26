@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #D81324;
+    --primary: #B31E8D;
     --secondary: #0B2154;
     --light: #F2F2F2;
     --dark: #111111;
@@ -195,7 +195,7 @@
 
 /*** Facts ***/
 .fact {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/210508T1556_920.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -219,10 +219,9 @@
 
 /*** Booking ***/
 .booking {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/hinhhoptac.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-2.jpg) center center no-repeat;
     background-size: cover;
 }
-
 
 .bootstrap-datetimepicker-widget.bottom {
     top: auto !important;
