@@ -6,4 +6,5 @@ export class Product{
     description: string;
     idsale: number;
     idcategory: number;
+    saleNumber: number;
 }

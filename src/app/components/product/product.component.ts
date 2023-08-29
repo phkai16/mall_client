@@ -61,4 +61,42 @@ export class ProductComponent implements OnInit{
        );
      }
   }
+ 
+  order(evt: any){
+    var type:number = evt.target.value;
+    if(type == 0){
+      this.productAPIService.findAll().then(
+        res => {
+            this.products = res as Product[]; 
+            console.log(this.products);
+            
+        },
+        err => {
+            console.log(err);
+        }
+       );
+    } else if(type == 1){
+      this.productAPIService.asc().then(
+        res => {
+            this.products = res as Product[]; 
+            console.log(this.products);
+            
+        },
+        err => {
+            console.log(err);
+        }
+       );
+    } else if(type == 2){
+      this.productAPIService.desc().then(
+        res => {
+            this.products = res as Product[]; 
+            console.log(this.products);
+            
+        },
+        err => {
+            console.log(err);
+        }
+       );
+    }
+  }
 }

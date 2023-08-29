@@ -6,6 +6,7 @@ import { Food_DrinkComponent } from './components/food-drink/food_drink.componen
 import { HomeComponent } from './components/home/home.component';
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { Enter_learnComponent } from './components/enter_learn/enter_learn.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
     path: 'entertainment-learning',
     component: Enter_learnComponent,
   },
+  {
+    path: 'about',
+    component: AboutComponent,
+  }
 ];
 
 @NgModule({

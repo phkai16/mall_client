@@ -16,5 +16,13 @@ export class ProductAPIService{
         return await lastValueFrom(this.httpClient.get(this.baseUrlServiceL.getBaseUrl()
         + 'product/findByName/' + name));
     }
+    async asc(){
+        return await lastValueFrom(this.httpClient.get(this.baseUrlServiceL.getBaseUrl()
+        + 'product/asc'));
+    }
+    async desc(){
+        return await lastValueFrom(this.httpClient.get(this.baseUrlServiceL.getBaseUrl()
+        + 'product/desc'));
+    }
 
 }

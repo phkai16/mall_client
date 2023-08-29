@@ -16,6 +16,7 @@ import { ProductAPIService } from './services/productAPI.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './components/about/about.component';
 @NgModule({
   declarations: [
     AppComponent, ShopComponent, ProductComponent,
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     ShoppingComponent,
     Enter_learnComponent,
-    ProductComponent
+    ProductComponent,
+    AboutComponent
   ],
   imports: [BrowserModule, AppRoutingModule,
     HttpClientModule,
