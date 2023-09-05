@@ -5,15 +5,15 @@ import { lastValueFrom } from "rxjs";
 @Injectable()
 export class ShopAPIService{
     constructor(
-        private baseUrlServiceL: BaseUrlService,
+        private baseUrlService: BaseUrlService,
         private httpClient: HttpClient
     ){}
     async findByCategoryID(categoryID: number){
-        return await lastValueFrom(this.httpClient.get(this.baseUrlServiceL.getBaseUrl()
+        return await lastValueFrom(this.httpClient.get(this.baseUrlService.getBaseUrl()
         + 'shop/findByCategoryID/' + categoryID));
     }
     async findByName(name: string, categoryID: number){
-        return await lastValueFrom(this.httpClient.get(this.baseUrlServiceL.getBaseUrl()
+        return await lastValueFrom(this.httpClient.get(this.baseUrlService.getBaseUrl()
         + 'shop/findByName/' + name + '/' + categoryID));
     }
 

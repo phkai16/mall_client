@@ -11,7 +11,7 @@
                       
                   <div  class="dropdown" style="position: relative; right: 55%;">
                    
-                  <select (change)="order($event)" name="" id="" class="dropdown" style="height: 40px;" class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <select (change)="order($event)" name="" id="" class="dropdown" style="height: 40px; position: relative; left: 60px;" class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     <option value="0" >All</option>
                     <option value="1" >Ascending Price</option>
                     <option value="2" >Descending Price</option>
@@ -38,7 +38,8 @@
                             <h5 class="fw-bold mb-0">{{product.name}}</h5>
                             <h5 *ngIf="product.saleNumber != null" class="fw-bold mb-0" style="color: red; text-decoration: line-through;">{{product.price}}.000 VND</h5>
                             <h5 *ngIf="product.saleNumber == null" class="fw-bold mb-0" >{{product.price}}.000 VND</h5>
-                            <h5 *ngIf="product.saleNumber != null" class="fw-bold mb-0" style="color: red;">{{(product.price - (product.price*product.saleNumber)) | number: '1.0-0'}}.000 VND</h5>
+                            <h5 *ngIf="product.saleNumber != null " class="fw-bold mb-0" style="color: red;">{{(product.price - (product.price*product.saleNumber)) | number: '1.0-0'}}.000 VND</h5>
+                         
                             
                             <small>{{product.description}}</small>
                         </div>

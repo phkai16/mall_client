@@ -1,0 +1,402 @@
+
+
+
+<div class="main-banner" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="caption header-text">
+            <h6>Welcome to cinema</h6>
+            <h2>BEST MOVIE SITE EVER!</h2>
+            <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
+            <div class="search-input">
+              <form id="search" action="#">
+                <input type="text" placeholder="SEARCH FILM!" id='searchText' name="searchKeyword" onkeypress="handle" />
+                <button role="button">Search Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-2">
+          <div class="right-image">
+            <img src="assets/css/assetsCinema/images/banner-image.jpg" alt="">
+            <span class="price"  style="font-size: small;">Detective Film</span>
+            <span class="offer" style="font-size: small;">BOOK!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section trending">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+           
+            <h2>All Movie</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="shop.html">All Movie</a>
+          </div>
+        </div>
+        <!-- Date -->
+        <div style="margin-bottom: 20px;" class="btn-group" role="group" aria-label="Basic radio toggle button group">
+          <input (click)="check($event)" value="{{date1 | date: 'fullDate'}}" type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label  class="btn btn-outline-primary" for="btnradio1">{{date1 | date: 'fullDate'}}</label>
+        
+          <input (click)="check($event)" value="{{date2 | date: 'fullDate'}}" type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio2">{{date2 | date: 'fullDate'}}</label>
+        
+          <input (click)="check($event)" value="{{date3 | date: 'fullDate'}}" type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio3">{{date3 | date: 'fullDate'}}</label>
+           
+          <input (click)="check($event)" value="{{date4 | date: 'fullDate'}}" type="radio" class="btn-check" name="btnradio" id="btnradio4">
+          <label class="btn btn-outline-primary" for="btnradio4">{{date4 | date: 'fullDate'}}</label>
+        
+          <input (click)="check($event)" value="{{date5 | date: 'fullDate'}}" type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio5">{{date5 | date: 'fullDate'}}</label>
+        
+          <input (click)="check($event)" value="{{date6 | date: 'fullDate'}}" type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio6">{{date6 | date: 'fullDate'}}</label>
+
+          <input (click)="check($event)" value="{{date7 | date: 'fullDate'}}" type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio7">{{date7 | date: 'fullDate'}}</label>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a [routerLink]="['/details-cinema']"><img src="assets/css/assetsCinema/images/trending-01.jpg" alt=""></a>
+              <span class="price" style="font-size: small;"><i class="fa fa-video"></i></span>
+              
+            </div>
+           <div style="text-align: center;">
+            <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+            <a href="#">suat chieu </a> |
+           </div>
+            <div class="down-content">
+             
+
+              <span class="category">The loai</span> | 
+              <span class="category">Thoi gian</span> | 
+              <span class="category">Phu de</span>
+             
+              <h3>Ten phim</h3>
+              <a [routerLink]="['/details-cinema']"><i class="fa fa-check"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a [routerLink]="['/details-cinema']"><img src="assets/css/assetsCinema/images/trending-01.jpg" alt=""></a>
+              <span class="price" style="font-size: small;"><i class="fa fa-video"></i></span>
+              
+            </div>
+           <div style="text-align: center;">
+            <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+            <a href="#">suat chieu </a> |
+           </div>
+            <div class="down-content">
+             
+
+              <span class="category">The loai</span> | 
+              <span class="category">Thoi gian</span> | 
+              <span class="category">Phu de</span>
+             
+              <h3>Ten phim</h3>
+              <a [routerLink]="['/details-cinema']"><i class="fa fa-check"></i></a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a [routerLink]="['/details-cinema']"><img src="assets/css/assetsCinema/images/trending-01.jpg" alt=""></a>
+              <span class="price" style="font-size: small;"><i class="fa fa-video"></i></span>
+              
+            </div>
+           <div style="text-align: center;">
+            <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+            <a href="#">suat chieu </a> |
+           </div>
+            <div class="down-content">
+             
+
+              <span class="category">The loai</span> | 
+              <span class="category">Thoi gian</span> | 
+              <span class="category">Phu de</span>
+             
+              <h3>Ten phim</h3>
+              <a [routerLink]="['/details-cinema']"><i class="fa fa-check"></i></a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a [routerLink]="['/details-cinema']"><img src="assets/css/assetsCinema/images/trending-01.jpg" alt=""></a>
+              <span class="price" style="font-size: small;"><i class="fa fa-video"></i></span>
+              
+            </div>
+           <div style="text-align: center;">
+            <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+            <a href="#">suat chieu </a> |
+           </div>
+            <div class="down-content">
+             
+
+              <span class="category">The loai</span> | 
+              <span class="category">Thoi gian</span> | 
+              <span class="category">Phu de</span>
+             
+              <h3>Ten phim</h3>
+              <a [routerLink]="['/details-cinema']"><i class="fa fa-check"></i></a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a [routerLink]="['/details-cinema']"><img src="assets/css/assetsCinema/images/trending-01.jpg" alt=""></a>
+              <span class="price" style="font-size: small;"><i class="fa fa-video"></i></span>
+              
+            </div>
+           <div style="text-align: center;">
+            <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+           <a href="#">suat chieu </a> |
+            <a href="#">suat chieu </a> |
+           </div>
+            <div class="down-content">
+             
+
+              <span class="category">The loai</span> | 
+              <span class="category">Thoi gian</span> | 
+              <span class="category">Phu de</span>
+             
+              <h3>Ten phim</h3>
+              <a [routerLink]="['/details-cinema']"><i class="fa fa-check"></i></a>
+            </div>
+          </div>
+        </div>
+ 
+ 
+
+          
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section most-played">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>Movie genre</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="shop.html">View All</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/top-game-01.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/top-game-02.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/top-game-03.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/top-game-04.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/top-game-05.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/top-game-06.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Categories</h6>
+            <h2>Top Categories</h2>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/categories-01.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/categories-03.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/categories-04.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/css/assetsCinema/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="shop">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Our Shop</h6>
+                  <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
+                </div>
+                <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                <div class="main-button">
+                  <a href="shop.html">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-2 align-self-end">
+          <div class="subscribe">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>NEWSLETTER</h6>
+                  <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+                </div>
+                <div class="search-input">
+                  <form id="subscribe" action="#">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email...">
+                    <button type="submit">Subscribe Now</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+      </div>
+    </div>
+  </footer>
+
+

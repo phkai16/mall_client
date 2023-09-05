@@ -7,4 +7,6 @@ export class Product{
     idsale: number;
     idcategory: number;
     saleNumber: number;
+    startSale: Date;
+    endSale: Date;
 }

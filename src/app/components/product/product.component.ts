@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class ProductComponent implements OnInit{
   searchByName: FormGroup;
   options: any[];
-
+  today: Date = new Date();
   constructor(
     private productAPIService: ProductAPIService,
     private formBuilder: FormBuilder,
@@ -17,10 +17,17 @@ export class ProductComponent implements OnInit{
   products: Product[];
   
   ngOnInit(): void {
+  
     this.productAPIService.findAll().then(
       res => {
           this.products = res as Product[]; 
-          console.log(this.products);
+          for(let p of this.products){
+            let date: string;
+            date = p.startSale.toISOString();
+         
+            console.log( p.startSale);
+          }
+         
           
       },
       err => {

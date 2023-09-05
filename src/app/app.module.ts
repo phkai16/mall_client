@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ToastModule } from 'primeng/toast';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ShopComponent } from './components/shop/shop.component';
+import { GallaryComponent } from './components/gallary/gallary.component';
 import { ProductComponent } from './components/product/product.component';
 import { Food_DrinkComponent } from './components/food-drink/food_drink.component';
 import { HomeComponent } from './components/home/home.component';
@@ -17,27 +17,57 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './components/about/about.component';
+import { NewsComponent } from './components/news/news.component';
+import { GallaryAPIService } from './services/gallaryAPI.service';
+import { EditorModule } from 'primeng/editor';
+import { RatingModule } from 'primeng/rating';
+import { ButtonModule } from 'primeng/button';
+import { FieldsetModule } from 'primeng/fieldset';
+import { InputTextModule } from 'primeng/inputtext';
+import { HomeCinemaComponent } from './components/Cinema home/homecinema.component';
+import { DetailsCinemaComponent } from './components/Cinema details/detailscinema.component';
+import { FeedbackAPIService } from './services/feedbackapi.service';
+import { FeedbackComponent } from './components/feedback/feedback.component';
+import { ConfirmationService, MessageService } from 'primeng/api';
 @NgModule({
   declarations: [
-    AppComponent, ShopComponent, ProductComponent,
+    AppComponent, GallaryComponent, ProductComponent,
     Food_DrinkComponent,
     HomeComponent,
     ShoppingComponent,
     Enter_learnComponent,
     ProductComponent,
-    AboutComponent
+    AboutComponent,
+    NewsComponent,
+    GallaryComponent,
+    FeedbackComponent,
+    HomeCinemaComponent,
+    DetailsCinemaComponent
+  
   ],
   imports: [BrowserModule, AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    DropdownModule  
+    DropdownModule  ,
+    EditorModule,
+    RatingModule,
+    ButtonModule,
+    FieldsetModule,
+    InputTextModule,
+    RatingModule,
+    ToastModule
   ],
   providers: [
     ShopAPIService,
     BaseUrlService,
-    ProductAPIService
+    ProductAPIService,
+    GallaryAPIService,
+    FeedbackAPIService,
+    MessageService,
+    ConfirmationService
+    
   ],
   bootstrap: [AppComponent],
 })
